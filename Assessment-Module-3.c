@@ -5,7 +5,7 @@ void main()
     int amount=0;
     while (confoirm)
     {
-        
+        // It define Menu to user Which They want to order.
         printf("--------- Menu ---------");
         printf(" \n 1. Pizza        Price = 180rs/pcs");
         printf(" \n 2. Burger       Price = 100rs/pcs");
@@ -16,6 +16,7 @@ void main()
         printf("\n Please Enter Your Choose... : ");
         scanf("%d", &ch);
 
+        // It select any one order and calculate amount of order.
         switch (ch)
         {
         case 1:
@@ -51,10 +52,11 @@ void main()
             break;
         }
         
-        
+        // It ask User that if they want any other order or not.
         printf("\n Do You want Place More Order ? If Yes Then Enter 1 If No Then Enter 0 ");
         scanf(" %d", &confoirm);
 
+        // It define total amount of order. 
         if (confoirm == 0)
         {
             printf("\n Thanks For Visite");
